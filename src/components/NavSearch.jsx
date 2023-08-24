@@ -1,5 +1,5 @@
 import { omdbApi } from "../api/omdbApi";
-import { useEffect } from "react";
+
 
 export const NavSearch = ({
   search,
@@ -7,10 +7,6 @@ export const NavSearch = ({
   setSearchResults,
   searchResults,
 }) => {
-  // useEffect(() => {
-
-  // }, [searchResults]);
-
   const handleSearch = async (e) => {
     e.preventDefault();
     try {
