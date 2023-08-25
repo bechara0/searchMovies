@@ -18,7 +18,9 @@ const ContentList = ({ searchResults }) => {
         {movies.length > 0 ? (
           movies.map((film) => <Film key={film.imdbID} film={film} />)
         ) : (
-          <h1>Sin resultado</h1>
+          <h1 className="uppercase text-2xl bg-red-700 p-2 rounded-2xl font-bold">
+            looking for search results
+          </h1>
         )}
       </div>
     </div>

@@ -8,7 +8,7 @@ export const omdbApi = async (search) => {
 };
 
 export const omdbApiById = async (id) => {
-  let urlInfo = `${url}${apiKey}&type-movie&plot-short&i-${id}`;
+  let urlInfo = `${url}${apiKey}&i=${id}`;
   let response = await fetch(urlInfo);
   let results = await response.json();
   console.log(urlInfo);
